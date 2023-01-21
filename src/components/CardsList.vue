@@ -47,7 +47,7 @@ components:{
 
 main{
     background-color: white;
-    margin-top:2.69em;
+    margin-top: 15em;
 
 }    
 
