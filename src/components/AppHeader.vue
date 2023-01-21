@@ -3,15 +3,15 @@ export default {};
 </script>
 
 <template lang="">
-    <Header>
+    <header>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h3 class="mt-2">Yu-Gi-Oh Api</h3>  
+                    <h3 class="mt-4 position-relative py-2 px-4 text-bg-dark border border-dark rounded-pill text-center">Yu-Gi-Oh Api</h3>  
                 </div>
             </div>
         </div>
-    </Header>
+    </header>
 </template>
 
 <style lang="scss" scoped>
@@ -20,8 +20,8 @@ export default {};
 
 
 header{
-    height: 80px;
-    background-color: white;
+    height: 50px;
+    background-color: $primary;
 }
 
 

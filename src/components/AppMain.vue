@@ -1,5 +1,5 @@
 <script>
-import CardsList from './CardsList.vue'
+import CardsList from "./CardsList.vue"
 
 export default {
     components:{

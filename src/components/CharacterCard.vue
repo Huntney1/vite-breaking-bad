@@ -12,9 +12,9 @@ export default {
 </script>
 
 <template lang="">
-    <div class="col-12 col-md-3 mt-3">
+    <div class="col-12 col-md-4 mt-3">
         <div class="cards-card">
-            <img class="img-fluid" src="card.card_images[0].image_url">
+            <img class="img-fluid" :src="card.card_images[0].image_url">
             <div class="card-info">
                 <h4>{{ card.name }}</h4>
                 <p>{{ card.type }}</p>
