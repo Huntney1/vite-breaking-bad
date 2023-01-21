@@ -3,6 +3,7 @@ import CharacterCard from "./CharacterCard.vue";
 import { store } from "../store.js";
 
 export default {
+    name: 'CardsList',
     /* props:{
         option: Object
 
@@ -14,7 +15,7 @@ components:{
     data() {
         return{
              store,
-             archi: '',
+             change: '',
         }
        
     },
@@ -25,9 +26,9 @@ components:{
   <main class="container">
 
     <div class="container-select">
-        <select class="select-style mt-4" id="" name="alien" v-model="archi" @change="$emit('selectArchiName', archi)">
+        <select class="select-style mt-4" id="" name="alien" v-model="change" @change="$emit('selectchangeName', change)">
             <option value="">Seleziona un Archetipo</option>
-            <option v-for="(element, index) in option" value="element.archetype_name">{{ element.archetype_name }}</option>
+            <option v-for="(element, index) in option" :key="index" value="element.archetype_name">{{ element.archetype_name }}</option>
         </select>
     
         <div class="cont-num">
@@ -47,9 +48,17 @@ components:{
 
 main{
     background-color: white;
-    margin-top: 15em;
+    margin-top: 11em;
 
 }    
+    .select-style{
+        background-color: black;
+        width: 14em;
+       /*  height: 100%; */
+        color: white;
+        border: none;
+       
+    }
 
     .container-num{
         display: flex;
@@ -58,17 +67,10 @@ main{
         background-color: black;
         color: white;
         height: 100%;
+
         h4{
             color: white;
         }
-    }
-    .select-style{
-        background-color: black;
-        width: 14em;
-        height: 100%;
-        color: white;
-        border: none;
-       
     }
 
 

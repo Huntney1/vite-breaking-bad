@@ -5,13 +5,23 @@ export default {
 </script>
 
 <template lang="">
+  <div class="bck-img">
     <div class="loader-bkg">
-      <div class="lds-dual-ring">Yu-Gi-Oh</div>
+      <div class="lds-dual-ring">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg" alt=""> -->
+      </div>
     </div>
+  </div>
 </template>
 
 <style lang="scss" scoped>
 @use "../components/styles/partials/variables" as *;
+
+.bck-img {
+  width: 100%;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/11/Yu-Gi-Oh%21_%28Logo%29.jpg");
+  background-size: auto;
+}
 
 .loader-bkg{
     width: 100vw;
@@ -23,18 +33,19 @@ export default {
 }
 .lds-dual-ring {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: 200px;
+
 }
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  width: 64px;
-  height: 64px;
+  width: 100px;   /* w_h: 64px */
+  height: 100px;
   margin: 8px;
   border-radius: 50%;
   border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border-color: rgb(249, 5, 5) transparent $primary transparent;
   position: absolute;
   top: 50%;
   left: 50%;

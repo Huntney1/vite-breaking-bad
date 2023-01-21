@@ -27,8 +27,8 @@ header{
     background-color: $primary;
 
     img{
-        width: 55em;
-        height: 15em;
+        width: 45em;
+        height: 11em;
     }
 }
 

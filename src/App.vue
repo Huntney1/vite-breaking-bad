@@ -28,7 +28,7 @@ export default{
         store.cardsList = response.data.data;
         setTimeout(() => {
           store.isLoaded = true;
-        },2000)
+        },4000)
         
       });
     }
